@@ -441,7 +441,7 @@ p {
   text-transform: uppercase;
 }
 
-.section-secondary__text {
+.our-advantages__text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -825,7 +825,7 @@ p {
 }
 
 
-.portfolio {
+.portfolio__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

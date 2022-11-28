@@ -1,0 +1,72 @@
+.modal__checkbox {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--grey);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.modal__checkbox-label {
+    position: relative;
+}
+
+/* Ukrycie domyślnego checkboxa */
+.modal__checkbox-input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.modal__checkbox-input:checked+svg {
+    visibility: hidden;
+}
+
+.modal__checkbox-input~svg:nth-of-type(2) {
+    visibility: hidden;
+}
+
+.modal__checkbox-input:checked~svg:nth-of-type(2) {
+    visibility: visible;
+}
+
+.modal__checkbox a,
+.modal__checkbox:hover a {
+    color: var(--hover-color);
+}
+
+.modal__checkbox-svg {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    top: 3px;
+    user-select: none;
+}
+
+.modal__checked-icon {
+    background-color: var(--hover-color);
+    fill: #fff;
+
+    border-radius: 2px;
+}
+
+.modal__statement {
+    margin-left: 24px;
+}
+
+.modal__button-send {
+    display: flex;
+    margin: auto;
+    padding: 10px 76px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+    background-color: var(--hover-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
