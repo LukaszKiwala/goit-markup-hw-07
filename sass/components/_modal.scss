@@ -7,9 +7,9 @@
     border-radius: 4px;
     position: relative;
     text-align: left;
-}
 
-.modal__button {
+
+&__button {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -22,17 +22,17 @@
     cursor: pointer;
 }
 
-.modal__button-close-icon {
+&__button-close-icon {
     margin: auto;
     width: 18px;
     height: 18px;
 }
 
-.modal__header {
+&__header {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-}
+}}

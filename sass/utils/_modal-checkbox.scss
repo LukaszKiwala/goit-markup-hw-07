@@ -1,4 +1,15 @@
-.modal__checkbox {
+.modal {
+    margin: auto;
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    position: relative;
+    text-align: left;
+
+
+&__checkbox {
     display: flex;
     align-items: center;
     padding-left: 15px;
@@ -9,34 +20,34 @@
     letter-spacing: 0.03em;
 }
 
-.modal__checkbox-label {
+&__checkbox-label {
     position: relative;
 }
 
 /* Ukrycie domyślnego checkboxa */
-.modal__checkbox-input {
+&__checkbox-input {
     position: absolute;
     visibility: hidden;
 }
 
-.modal__checkbox-input:checked+svg {
+&__checkbox-input:checked+svg {
     visibility: hidden;
 }
 
-.modal__checkbox-input~svg:nth-of-type(2) {
+&__checkbox-input~svg:nth-of-type(2) {
     visibility: hidden;
 }
 
-.modal__checkbox-input:checked~svg:nth-of-type(2) {
+&__checkbox-input:checked~svg:nth-of-type(2) {
     visibility: visible;
 }
 
-.modal__checkbox a,
-.modal__checkbox:hover a {
+&__checkbox a,
+&__checkbox:hover a {
     color: var(--hover-color);
 }
 
-.modal__checkbox-svg {
+&__checkbox-svg {
     position: absolute;
     width: 16px;
     height: 15px;
@@ -44,18 +55,18 @@
     user-select: none;
 }
 
-.modal__checked-icon {
+&__checked-icon {
     background-color: var(--hover-color);
     fill: #fff;
 
     border-radius: 2px;
 }
 
-.modal__statement {
+&__statement {
     margin-left: 24px;
 }
 
-.modal__button-send {
+&__button-send {
     display: flex;
     margin: auto;
     padding: 10px 76px;
@@ -69,4 +80,4 @@
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+}}

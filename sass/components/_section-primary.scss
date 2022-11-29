@@ -8,9 +8,9 @@
         url(../images/background-photo-index.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}
 
-.section-primary__header {
+
+&__header {
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
@@ -19,7 +19,7 @@
     color: var(--color-white);
 }
 
-.section-primary__button {
+&__button {
     width: 200px;
     height: 50px;
     left: 700px;
@@ -35,4 +35,4 @@
     color: var(--color-very-light-grey);
     cursor: pointer;
     border: none;
-}
+}}

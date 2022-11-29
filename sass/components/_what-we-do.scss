@@ -9,17 +9,17 @@
     letter-spacing: 0.03em;
 }
 
-.what-we-do__list {
+.what-we-do {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
 
-.what-we-do__item {
+
+&__item {
     position: relative;
 }
 
-.what-we-do__offer-description {
+&__offer-description {
     position: absolute;
     font-weight: 700;
     font-size: 14px;
@@ -32,4 +32,4 @@
     bottom: 0;
     width: 100%;
     padding-block: 27px;
-}
+}}
